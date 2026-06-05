@@ -364,7 +364,7 @@ async function followOrder(id) {
         return
     }
 
-    order.status = 'Livré !'
+    order.status = ' Livré ! '
     saveData()
     renderOrders()
     showToast('Commande livrée')
