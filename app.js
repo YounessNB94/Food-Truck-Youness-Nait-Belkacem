@@ -11,8 +11,9 @@ const orderModal = new bootstrap.Modal(document.getElementById('orderModal'))
 const toast = new bootstrap.Toast(notificationElement)
 
 let menu = []
-let cart = JSON.parse(localStorage.getItem('cart')) || []
 let orders = JSON.parse(localStorage.getItem('orders')) || []
+let cart = JSON.parse(localStorage.getItem('cart')) || []
+
 
 async function loadMenu() {
     try {
